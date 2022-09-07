@@ -1,3 +1,3 @@
 # Nutrition-Assistant-Application
 
-Nalayathiran project
+Nalayathiran project - IBM smartinternz
