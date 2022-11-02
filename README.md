@@ -16,5 +16,31 @@ Project Name : Nutrition Assistant Application
 - [ ] Implementing Web Application
     - [ ] Create UI to interact with Application
     - [ ] Create IBM DB2 And Connect with Python
-    - [ ] Child - 3
-    - [ ] Child - 4
+    - [ ] Integrate Nutrition API
+- [ ] Integrate SendGrid Service
+    - [ ] SendGrid Integration with Python code
+- [ ] Deployment of App in IBM Cloud
+    - [ ] Containerize the App
+    - [ ] Upload image to IBM Container Registry
+    - [ ] Deploy in Kubernetes Cluster
+- [X] Ideation Phase
+    - [X] Literature Survey on the selected project & Information Gathering
+    - [X] Prepare Empathy Map
+    - [X] Ideation
+- [X] Project Design Phase - I
+    - [X] Proposed Solution
+    - [X] Problem Solution Fit
+    - [X] Solution Architecture
+- [X] Project Design Phase - II
+    - [X] Customer Journey
+    - [X] Functional Requirements
+    - [X] Data Flow Diagrams
+    - [X] Technology Architecture
+- [X] Project Planning Phase
+    - [X] Prepare Milestone & Activity List
+    - [X] Sprint Delivery Plan
+- [ ] Project Development Phase
+    - [ ] Project Development - Delivery of Sprint-1
+    - [ ] Project Development - Delivery of Sprint-2
+    - [ ] Project Development - Delivery of Sprint-3
+    - [ ] Project Development - Delivery of Sprint-4
