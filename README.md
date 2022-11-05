@@ -8,11 +8,11 @@ Project Name : Nutrition Assistant Application
 
 - [X] Setting Up Application Environment
     - [X] Create Flask Project
-    - [ ] Create IBM Cloud Account
-    - [ ] Install IBM Cloud CLI
+    - [X] Create IBM Cloud Account
+    - [X] Install IBM Cloud CLI
     - [ ] Docker CLI Installation
-    - [ ] Create an account in sendgrid
-    - [ ] Create an account in Nutrition api
+    - [X] Create an account in sendgrid
+    - [X] Create an account in Nutrition api
 - [ ] Implementing Web Application
     - [ ] Create UI to interact with Application
     - [ ] Create IBM DB2 And Connect with Python
