@@ -15,7 +15,7 @@ Project Name : Nutrition Assistant Application
     - [X] Create an account in Nutrition api
 - [ ] Implementing Web Application
     - [ ] Create UI to interact with Application
-    - [ ] Create IBM DB2 And Connect with Python
+    - [X] Create IBM DB2 And Connect with Python
     - [ ] Integrate Nutrition API
 - [ ] Integrate SendGrid Service
     - [ ] SendGrid Integration with Python code
