@@ -39,8 +39,8 @@ Project Name : Nutrition Assistant Application
 - [X] Project Planning Phase
     - [X] Prepare Milestone & Activity List
     - [X] Sprint Delivery Plan
-- [ ] Project Development Phase
-    - [ ] Project Development - Delivery of Sprint-1
+- [X] Project Development Phase
+    - [X] Project Development - Delivery of Sprint-1
     - [ ] Project Development - Delivery of Sprint-2
     - [ ] Project Development - Delivery of Sprint-3
     - [ ] Project Development - Delivery of Sprint-4
