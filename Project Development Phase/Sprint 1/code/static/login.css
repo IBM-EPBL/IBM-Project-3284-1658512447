@@ -1,0 +1,25 @@
+
+.login{
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+}
+
+.submit{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 5px;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
