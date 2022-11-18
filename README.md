@@ -13,12 +13,12 @@ Project Name : Nutrition Assistant Application
     - [X] Docker CLI Installation
     - [X] Create an account in sendgrid
     - [X] Create an account in Nutrition api
-- [ ] Implementing Web Application
-    - [ ] Create UI to interact with Application
+- [X] Implementing Web Application
+    - [X] Create UI to interact with Application
     - [X] Create IBM DB2 And Connect with Python
-    - [ ] Integrate Nutrition API
-- [ ] Integrate SendGrid Service
-    - [ ] SendGrid Integration with Python code
+    - [X] Integrate Nutrition API
+- [X] Integrate SendGrid Service
+    - [X] SendGrid Integration with Python code
 - [ ] Deployment of App in IBM Cloud
     - [ ] Containerize the App
     - [ ] Upload image to IBM Container Registry
