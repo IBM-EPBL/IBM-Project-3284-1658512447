@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/register.css">
+    <title>register</title>
+
+</head> 
+<body>
+    <div class="register">
+    <form action ="{{url_for('otp')}}" method="POST">
+        <h2 class="head"> Create Your Account </h2> <br>
+        <div class="grid">
+            <div class="gridtop"><label>Username</label></div> 
+            <div class="gridtop"><input type="text" name="username" required></div>
+            <div class="griditem"><label>Email</label></div> 
+            <div class="griditem"><input type="text" name="email" required></div>
+            <div class="griditem"><label>Password</label></div>
+            <div class="griditem"><input type="password" name="password1" required></div>
+            <div class="griditem"><label>Confirm Password</label></div>
+            <div class="griditem"><input type="password" name="password2" required></div>
+        </div>  
+        <input type="submit" value="submit" class="submit">
+    </form>
+         <center style="color : red">{{msg}}</center>
+    </div>
+</body>
+</html>
