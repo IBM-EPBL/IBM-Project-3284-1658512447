@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../static/home.css">
+    <link rel="stylesheet" type="text/css" href="../static/history.css">
+
+    
+    <title>Nutrition Assistant</title>
+</head>
+<body>
+        <header>  
+            <nav>  
+                <ul>  
+                    <li>  <a href="home"> Home </a>  </li>  
+                    <li>  <a href="history"> History </a>  </li>     
+                    <li>  <a href="activity"> Activity </a>  </li>     
+                    <li>  <a href="about"> About </a>  </li>     
+                </ul>
+                <a href="logout" style="margin-left: 900px;"> logout </a>  
+            </nav>  
+        </header>
+        
+        <center><h1>History</h1></center>
+
+        <div class="grid-container" style="background-color: #f37221; grid-template-columns: auto auto auto auto;">
+
+        {% if result: %}
+          {% for item in result: %}
+            <div>{{ item['TD'] }}</div>
+            <div><img src="{{item['IMG_URL']}}" height="100px"></div> 
+            <div>{{ item['FOOD'] }}</div> 
+            <div> {{ item['DESCRIPTION'] }} </div>
+          {% endfor %}
+        {% endif %} 
+
+        </div>
+    
+</body>
+</html>
