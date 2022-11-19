@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../static/home.css">
+    
+    <style>
+        label {
+            color: white;
+         background-color: indigo;
+         padding: 0.5rem;
+         font-family: sans-serif;
+         border-radius: 0.3rem;
+         cursor: pointer;
+         margin-top: 1rem;
+        }
+        #file-chosen{
+        margin-left: 0.3rem;
+        font-family: sans-serif;
+        }
+        .content{
+         width: 80%; 
+         border: 1px solid #000000;
+         word-wrap: break-word;
+         margin-left: 5%;
+         padding: 5%;
+         border-radius: 5px;
+         box-shadow: inset;
+         background-color: rgb(212, 255, 0);
+        }
+        .attribute{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+
+    <title>Nutrition Assistant</title>
+</head>
+<body>
+        <header>  
+            <nav>  
+                <ul>  
+                    <li>  <a href="home"> Home </a>  </li>  
+                    <li>  <a href="history"> History </a>  </li>     
+                    <li>  <a href="activity"> Activity </a>  </li>     
+                    <li>  <a href="about"> About </a>  </li>     
+                </ul>  
+                <a href="logout" style="margin-left: 900px;"> logout </a>
+            </nav>  
+        </header>
+
+        <br>
+        <center>
+        
+            <input type="file" id="actual-btn" accept=".jpg, .jpeg, .png" onchange="loadFile(event)" hidden/>
+            <label for="actual-btn">Choose File</label>
+            <span id="file-chosen">No file chosen</span>
+            <p><img id="output" width="200" /></p>
+        <form action="{{url_for('fetch')}}" method="POST">
+            <input type="text" name="description" >
+            <button type="submit">fetch</button>
+        </form>
+    </center>
+        <div>
+            <center><h2>Nutrition info</h2></center>
+            <div class="content">
+                <span class="attribute">calories</span> 
+                 : {{calories}} <br> <br>
+                
+                 <span class="attribute">glycemicIndex</span> 
+                 : {{glycemicIndex}} <br> <br>
+                
+                 <span class="attribute">totalWeight</span> 
+                 : {{totalWeight}} <br> <br>
+
+                 
+                 <span class="attribute">dietLabels</span>
+                 {% for value in dietLabels %}
+                     {{ value + " , " }} 
+                 {% endfor %}
+                 <br> <br>
+
+                 <span class="attribute">healthLabels</span>
+                 {% for value in healthLabels %}
+                     {{ value + " , " }} 
+                 {% endfor %}
+                 <br> <br>
+
+                 <span class="attribute">cautions</span>
+                 {% for value in cautions %}
+                     {{ value + " , " }} 
+                 {% endfor %}
+                 <br> <br>
+                 
+                 <span class="attribute">ingredients</span>
+                 {% for value in ingredients %}
+                     {{ value + " , " }} 
+                 {% endfor %}
+                 <br> <br>
+
+                 <span class="attribute">totalNutrients</span> <br>
+                 {% if totalNutrients: %}
+                   {% for item in totalNutrients %}
+                      <span class="attribute">{{item}}</span>
+                      {{totalNutrients[item]['label']}}
+                      {{totalNutrients[item]['quantity']}}
+                      {{totalNutrients[item]['unit']}}
+                   {% endfor %}
+                 {% endif %} <br><br>
+
+                 <span class="attribute">totalNutrientsKCal</span> <br>
+                 {% if totalNutrientsKCal: %}
+                   {% for item in totalNutrientsKCal %}
+                      <span class="attribute">{{item}}</span>
+                      {{totalNutrientsKCal[item]['label']}}
+                      {{totalNutrientsKCal[item]['quantity']}}
+                      {{totalNutrientsKCal[item]['unit']}}
+                   {% endfor %}
+                 {% endif %}
+
+            </div>
+        </div>
+
+
+        <script>
+            const actualBtn = document.getElementById('actual-btn');
+            const fileChosen = document.getElementById('file-chosen');
+            actualBtn.addEventListener('change', function(){
+                fileChosen.textContent = this.files[0].name
+            })
+            var loadFile = function(event) {
+            	var image = document.getElementById('output');
+            	image.src = URL.createObjectURL(event.target.files[0]);
+            };
+        </script>
+        
+        <div class="footer">           
+           <p class="phone"> phone number : 9738393921 / email address : ariharanariharan2001@gmail.com</p>
+        </div>
+
+        <!-- <div class="menu" onclick="menu()">menu</div>
+        <div class="nav-bar">
+            Nutrition Assistant Application   
+        </div> -->
+</body>
+</html>

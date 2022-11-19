@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+</head>
+<body>
+    <h2>OTP verification</h2>
+    <p>We have sent OTP to your email please enter here...</p>
+    <form action="{{url_for('adduser')}}" method="POST">
+        <input type="text" name="otp" required>
+        <input type="text" name="username" value={{username}} hidden>
+        <input type="text" name="email" value={{email}} hidden>
+        <input type="text" name="password" value={{password}} hidden>
+        <input type="text" name="actualotp" value={{actualotp}} hidden>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

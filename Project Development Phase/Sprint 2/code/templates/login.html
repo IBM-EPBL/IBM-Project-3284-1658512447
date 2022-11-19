@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/login.css">
+    <title>login page</title>
+    
+</head>
+<body>
+    
+    <div class = "login">
+        <form action ="{{url_for('auth')}}" method="POST">
+            <h2 style="text-align: center"> Enter your credentials </h2> <br>
+            <label style="margin-left: 60px;">Email</label>
+            <input type="text" name="email" style="margin-left: 47px;" required> <br><br>
+            <label style="margin-left: 60px;">Password</label>
+            <input type="password" name="password" style="margin-left: 25px;" required> <br><br>
+             
+            <button type = "submit" class = "submit" >submit</button> <br> <br> 
+            <center><a href="register.html">if you don't have an account?</a></center> <br>
+        </form>
+        <center style="color : green">{{msg}}</center>
+    </div>
+</body>
+</html>
