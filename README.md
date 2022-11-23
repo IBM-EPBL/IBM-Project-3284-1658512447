@@ -20,9 +20,9 @@ Project Name : Nutrition Assistant Application
 - [X] Integrate SendGrid Service
     - [X] SendGrid Integration with Python code
 - [X] Deployment of App in IBM Cloud
-    - [ ] Containerize the App
-    - [ ] Upload image to IBM Container Registry
-    - [ ] Deploy in Kubernetes Cluster
+    - [X] Containerize the App
+    - [X] Upload image to IBM Container Registry
+    - [X] Deploy in Kubernetes Cluster
 - [X] Ideation Phase
     - [X] Literature Survey on the selected project & Information Gathering
     - [X] Prepare Empathy Map
@@ -43,4 +43,4 @@ Project Name : Nutrition Assistant Application
     - [X] Project Development - Delivery of Sprint-1
     - [X] Project Development - Delivery of Sprint-2
     - [X] Project Development - Delivery of Sprint-3
-    - [ ] Project Development - Delivery of Sprint-4
+    - [X] Project Development - Delivery of Sprint-4
